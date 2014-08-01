@@ -7,8 +7,8 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>777bbb8e-2e95-4cb1-b083-ab74114c26f7</PackageIdentityName>
-    <IntermediateOutputPath>c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>1555B563E0807BCF5A82C7986E621F4E559A31A5DD73A6EC742B36AC8A8435E5</RegisteredManifestChecksum>
+    <IntermediateOutputPath>C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>D4C5BABD744D34E4C3A774CF8AB14A9D02A79566733D7232D938090E3A4D56B3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>777bbb8e-2e95-4cb1-b083-ab74114c26f7_1.0.0.0_neutral__eq9h3e6grdrp4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>777bbb8e-2e95-4cb1-b083-ab74114c26f7_eq9h3e6grdrp4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>777bbb8e-2e95-4cb1-b083-ab74114c26f7</RegisteredPackageID>
@@ -17,52 +17,56 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-08-01T16:30:19.534</Modified>
+      <Modified>2014-08-01T21:02:34.320</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\Prime-CS.exe">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\Prime-CS.exe">
       <PackagePath>Prime-CS.exe</PackagePath>
-      <Modified>2014-08-01T16:30:19.010</Modified>
+      <Modified>2014-08-01T21:02:34.025</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2014-08-01T16:30:18.121</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\Game.xbf">
+      <PackagePath>Game.xbf</PackagePath>
+      <Modified>2014-08-01T21:02:33.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-08-01T16:30:18.121</Modified>
+      <Modified>2014-08-01T21:02:33.232</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\Prime-CS.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\Prime-CS.xr.xml">
       <PackagePath>Prime-CS.xr.xml</PackagePath>
-      <Modified>2014-08-01T16:30:17.775</Modified>
+      <Modified>2014-08-01T21:02:33.219</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-08-01T16:30:19.281</Modified>
+      <Modified>2014-08-01T21:02:34.196</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

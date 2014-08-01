@@ -26,5 +26,10 @@ namespace Prime_CS
         {
             this.InitializeComponent();
         }
+
+        public void PlayBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Game));
+        }
     }
 }

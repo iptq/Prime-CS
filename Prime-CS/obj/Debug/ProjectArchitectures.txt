@@ -1,1 +1,1 @@
-c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Prime-CS.csproj;neutral
+C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\Prime-CS.csproj;neutral

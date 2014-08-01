@@ -30,3 +30,8 @@ c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Deb
 c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\qualifiers.txt.intermediate
 c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\ProjectArchitectures.txt
+C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\bin\Debug\Game.xbf
+C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\Game.g.i.cs
+C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\Game.g.cs
+C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\Game.xaml
+C:\Users\Michael\documents\visual studio 2013\Projects\Prime-CS\Prime-CS\obj\Debug\Game.xbf

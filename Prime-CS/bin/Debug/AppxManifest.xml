@@ -22,8 +22,12 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Prime-CS.exe" EntryPoint="Prime_CS.App">
-      <m2:VisualElements DisplayName="Prime-CS" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Prime-CS" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="Prime" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="fast-paced number game" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
       </m2:VisualElements>
     </Application>
   </Applications>
