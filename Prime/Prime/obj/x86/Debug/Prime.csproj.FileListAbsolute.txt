@@ -1,0 +1,6 @@
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Prime.exe
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Prime.pdb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.csprojResolveAssemblyReference.cache
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.exe
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.pdb
