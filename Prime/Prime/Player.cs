@@ -16,6 +16,9 @@ namespace Prime
         Vector2 coords;
         Vector2 boardPos;
 
+        KeyboardState keyboardState;
+        GamePadState gamePadState;
+
         public Player(Texture2D _texture, Rectangle _screenBounds)
         {
             texture = _texture;

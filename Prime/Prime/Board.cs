@@ -14,9 +14,6 @@ namespace Prime
         Vector2 size;
         int[] Numbers = new int[25];
 
-        KeyboardState keyboardState;
-        GamePadState gamePadState;
-
         Texture2D texture;
         Rectangle screenBounds;
 
