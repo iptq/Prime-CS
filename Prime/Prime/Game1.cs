@@ -20,6 +20,7 @@ namespace Prime
         SpriteBatch spriteBatch;
 
         Board board;
+        Player player;
         Rectangle screenRectangle;
 
         public static Texture2D[] numberTextures = new Texture2D[10];
@@ -57,6 +58,7 @@ namespace Prime
             // TODO: use this.Content to load your game content here
 
             board = new Board(Content.Load<Texture2D>("board"), screenRectangle);
+            player = new Player(Content.Load<Texture2D>("player"), screenRectangle);
 
             for (int i = 0; i < 10; i++)
             {
@@ -86,6 +88,7 @@ namespace Prime
 
             // TODO: Add your update logic here
 
+            player.Update();
             board.Update();
 
             base.Update(gameTime);
@@ -104,6 +107,7 @@ namespace Prime
             spriteBatch.Begin();
 
             board.Draw(spriteBatch);
+            player.Draw(spriteBatch);
 
             spriteBatch.End();
 
