@@ -19,10 +19,17 @@ namespace Prime
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Board board;
+        Rectangle screenRectangle;
+
+        public static Texture2D[] numberTextures = new Texture2D[10];
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            screenRectangle = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
         }
 
         /// <summary>
@@ -48,6 +55,13 @@ namespace Prime
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+
+            board = new Board(Content.Load<Texture2D>("board"), screenRectangle);
+
+            for (int i = 0; i < 10; i++)
+            {
+                numberTextures[i] = Content.Load<Texture2D>("numbers/default-" + i);
+            }
         }
 
         /// <summary>
@@ -72,6 +86,8 @@ namespace Prime
 
             // TODO: Add your update logic here
 
+            board.Update();
+
             base.Update(gameTime);
         }
 
@@ -84,6 +100,12 @@ namespace Prime
             GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
+
+            spriteBatch.Begin();
+
+            board.Draw(spriteBatch);
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

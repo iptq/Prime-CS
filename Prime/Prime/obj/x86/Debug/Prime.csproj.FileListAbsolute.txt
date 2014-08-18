@@ -4,3 +4,16 @@ c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86
 c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.exe
 c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.pdb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\enemy.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\player.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-0.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-1.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-2.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-3.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-4.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-5.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-6.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-7.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-8.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-9.xnb
+c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\board.xnb
