@@ -66,7 +66,7 @@ namespace Prime
                 int digits = d.Length;
                 Console.WriteLine(d + " is " + digits + " digits long.");
 
-                Vector2 numSize = new Vector2(size.X/20,size.X*64/58/20);
+                Vector2 numSize = new Vector2(size.X / 20, size.X * 64 / 58 / 20);
                 if (digits < 4)
                 {
                     switch (digits)
@@ -84,6 +84,10 @@ namespace Prime
                             spriteBatch.Draw(Game1.numberTextures[int.Parse(d.Substring(2, 1))], new Rectangle((int)(position.X + col * size.X / 5 + size.X / 10 - numSize.X / 2 + numSize.X), (int)(position.Y + row * size.Y / 5 + size.Y / 10 - numSize.Y / 2), (int)numSize.X, (int)numSize.Y), Color.White);
                             break;
                         case 4:
+                            spriteBatch.Draw(Game1.numberTextures[int.Parse(d.Substring(0, 1))], new Rectangle((int)(position.X + col * size.X / 5 + size.X / 10 - 2 * numSize.X), (int)(position.Y + row * size.Y / 5 + size.Y / 10 - numSize.Y / 2), (int)numSize.X, (int)numSize.Y), Color.White);
+                            spriteBatch.Draw(Game1.numberTextures[int.Parse(d.Substring(1, 1))], new Rectangle((int)(position.X + col * size.X / 5 + size.X / 10 - numSize.X), (int)(position.Y + row * size.Y / 5 + size.Y / 10 - numSize.Y / 2), (int)numSize.X, (int)numSize.Y), Color.White);
+                            spriteBatch.Draw(Game1.numberTextures[int.Parse(d.Substring(2, 1))], new Rectangle((int)(position.X + col * size.X / 5 + size.X / 10), (int)(position.Y + row * size.Y / 5 + size.Y / 10 - numSize.Y / 2), (int)numSize.X, (int)numSize.Y), Color.White);
+                            spriteBatch.Draw(Game1.numberTextures[int.Parse(d.Substring(3, 1))], new Rectangle((int)(position.X + col * size.X / 5 + size.X / 10 + numSize.X), (int)(position.Y + row * size.Y / 5 + size.Y / 10 - numSize.Y / 2), (int)numSize.X, (int)numSize.Y), Color.White);
                             break;
                     }
                 }
