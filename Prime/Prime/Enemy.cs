@@ -102,6 +102,94 @@ namespace Prime
                     }
                 }
             }
+            else
+            {
+                // complicated formula that does nothing
+                int delay = (int)Math.Floor((Math.Floor(-1 * (Math.Log(Prime.level) / (Math.Log(15) - Math.Log(14))) + 65.5)));
+                if (frames % delay == 0)
+                {
+                    int px = (int)Prime.player.coords.X;
+                    int py = (int)Prime.player.coords.Y;
+                    int ex = (int)coords.X;
+                    int ey = (int)coords.Y;
+                    if (px == ex && py != ey)
+                    {
+                        if (py < ey)
+                            ey -= 1;
+                        else if (py > ey)
+                            ey += 1;
+                    }
+                    else if (py == ey && px != ex)
+                    {
+                        if (px < ex)
+                            ex -= 1;
+                        else if (px > ex)
+                            ex += 1;
+                    }
+                    else
+                    {
+                        int area1 = 0, area2 = 0;
+                        if (px < ex)
+                        {
+                            if (py > ey)
+                            {
+                                area1 = (ex) * (5 - ey); // UP;
+                                area2 = (ex + 1) * (4 - ey); // RIGHT;
+                            }
+                            else if (py < ey)
+                            {
+                                area1 = (ex) * (ey + 1); // UP;
+                                area2 = (ex + 1) * (ey); // LEFT;
+                            }
+                        }
+                        else if (px > ex)
+                        {
+                            if (py > ey)
+                            {
+                                area1 = (4 - ex) * (5 - ey); // DOWN;
+                                area2 = (5 - ex) * (4 - ey); // RIGHT;
+                            }
+                            else if (py < ey)
+                            {
+                                area1 = (4 - ex) * (ey + 1); // DOWN;
+                                area2 = (5 - ey) * (ey); // LEFT;
+                            }
+                        }
+
+                        if (area1 > area2)
+                        { // VERTICAL
+                            if (px < ex)
+                                ex -= 1;
+                            else if (px > ex)
+                                ex += 1;
+                        }
+                        else if (area2 > area1)
+                        { // HORIZONTAL
+                            if (py < ey)
+                                ey -= 1;
+                            else if (py > ey)
+                                ey += 1;
+                        }
+                        else if (area1 == area2)
+                        { // RANDOM
+                            if (Prime.rand.Next(1, 3) == 1)
+                            {
+                                if (px < ex)
+                                    ex -= 1;
+                                else if (px > ex)
+                                    ex += 1;
+                            }
+                            else
+                            {
+                                if (py < ey)
+                                    ey -= 1;
+                                else if (py > ey)
+                                    ey += 1;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
