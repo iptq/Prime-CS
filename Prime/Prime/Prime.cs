@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using System.Threading.Tasks;
 
 namespace Prime
 {
@@ -40,6 +41,11 @@ namespace Prime
         public static int upLevel = 0;
         public static bool lost = false;
 
+        public static List<int> primes = new List<int>();
+
+        Texture2D meterTex;
+        Texture2D meterFillTex;
+
         public Prime()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -47,6 +53,9 @@ namespace Prime
 
             screenRectangle = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             helper = new InputHelper();
+            primes = atkin(10000);
+
+            Console.WriteLine("found " + primes.Count + " primes.");
         }
 
         /// <summary>
@@ -76,6 +85,9 @@ namespace Prime
             board = new Board(Content.Load<Texture2D>("board"), screenRectangle);
             player = new Player(Content.Load<Texture2D>("player"), screenRectangle);
             enemy = new Enemy(Content.Load<Texture2D>("enemy"), screenRectangle);
+
+            meterTex = Content.Load<Texture2D>("meter");
+            meterFillTex = Content.Load<Texture2D>("meter-fill");
 
             for (int i = 0; i < 10; i++)
             {
@@ -126,12 +138,64 @@ namespace Prime
             spriteBatch.Begin();
 
             board.Draw(spriteBatch);
+
+            int h = screenRectangle.Height * 9 / 10;
+            int w = h / 8;
+            int x = screenRectangle.Width - w - (screenRectangle.Height - h) / 2;
+            int y = (screenRectangle.Height - h) / 2;
+            spriteBatch.Draw(meterTex, new Rectangle(x, y, w, h), Color.White);
+
             player.Draw(spriteBatch);
             enemy.Draw(spriteBatch);
 
             spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+        static List<int> atkin(int max)
+        {
+            //  var isPrime = new BitArray((int)max+1, false); 
+            //  Can't use BitArray because of threading issues.
+            var isPrime = new bool[max + 1];
+            var sqrt = (int)Math.Sqrt(max);
+
+            Parallel.For(1, sqrt, x =>
+            {
+                var xx = x * x;
+                for (int y = 1; y <= sqrt; y++)
+                {
+                    var yy = y * y;
+                    var n = 4 * xx + yy;
+                    if (n <= max && (n % 12 == 1 || n % 12 == 5))
+                        isPrime[n] ^= true;
+
+                    n = 3 * xx + yy;
+                    if (n <= max && n % 12 == 7)
+                        isPrime[n] ^= true;
+
+                    n = 3 * xx - yy;
+                    if (x > y && n <= max && n % 12 == 11)
+                        isPrime[n] ^= true;
+                }
+            });
+
+            var primes = new List<int>() { 2, 3 };
+            for (int n = 5; n <= sqrt; n++)
+            {
+                if (isPrime[n])
+                {
+                    primes.Add(n);
+                    int nn = n * n;
+                    for (int k = nn; k <= max; k += nn)
+                        isPrime[k] = false;
+                }
+            }
+
+            for (int n = sqrt + 1; n <= max; n++)
+                if (isPrime[n])
+                    primes.Add(n);
+
+            return primes;
         }
     }
 }
