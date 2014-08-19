@@ -43,6 +43,10 @@ namespace Prime
 
         public void Update()
         {
+            if (Prime.helper.IsNewPress(Keys.Space) || Prime.helper.IsNewPress(Buttons.A))
+            {
+                Eat();
+            }
             if (coords.X > 0 && (Prime.helper.IsNewPress(Keys.Left) || Prime.helper.IsNewPress(Buttons.LeftThumbstickLeft) || Prime.helper.IsNewPress(Buttons.DPadLeft)))
             {
                 coords.X -= 1;
@@ -59,6 +63,11 @@ namespace Prime
             {
                 coords.Y += 1;
             }
+        }
+
+        public void Eat()
+        {
+
         }
     }
 }
