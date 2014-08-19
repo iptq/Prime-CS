@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\enemy.xnb</Output>
-      <Time>2014-08-17T23:49:57.5760638-05:00</Time>
+      <Time>2014-08-18T21:11:13.9737263-05:00</Time>
     </Item>
     <Item>
       <Source>player.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2014-08-17T23:49:57.5386428-05:00</Time>
+      <Time>2014-08-18T21:11:28.3979415-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-0.png</Source>
@@ -124,10 +124,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\PrimeContent\</RootDirectory>
-      <LoggerRootDirectory>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\PrimeContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\PrimeContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\PrimeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
