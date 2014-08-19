@@ -118,6 +118,24 @@
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\board.xnb</Output>
       <Time>2014-08-18T00:04:50.370476-05:00</Time>
     </Item>
+    <Item>
+      <Source>meter-fill.png</Source>
+      <Name>meter-fill</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\meter-fill.xnb</Output>
+      <Time>2014-08-18T22:10:32.0461409-05:00</Time>
+    </Item>
+    <Item>
+      <Source>meter.png</Source>
+      <Name>meter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\meter.xnb</Output>
+      <Time>2014-08-18T22:10:32.0431384-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

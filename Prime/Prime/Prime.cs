@@ -14,7 +14,7 @@ namespace Prime
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public static class Prime : Microsoft.Xna.Framework.Game
+    class Prime : Microsoft.Xna.Framework.Game
     {
         public static GraphicsDeviceManager graphics;
         public static SpriteBatch spriteBatch;
@@ -35,12 +35,10 @@ namespace Prime
         public static int percent = 0;
         public static int displayPercent = 0;
 
-        public static const string rektStatus = "rekt";
+        public const string rektStatus = "rekt";
 
         public static int upLevel = 0;
         public static bool lost = false;
-
-
 
         public Prime()
         {
