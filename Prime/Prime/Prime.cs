@@ -145,6 +145,8 @@ namespace Prime
             int y = (screenRectangle.Height - h) / 2;
             spriteBatch.Draw(meterTex, new Rectangle(x, y, w, h), Color.White);
 
+
+
             player.Draw(spriteBatch);
             enemy.Draw(spriteBatch);
 
