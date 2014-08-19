@@ -21,6 +21,7 @@ namespace Prime
 
         Board board;
         Player player;
+        Enemy enemy;
         Rectangle screenRectangle;
 
         public static InputHelper helper;
@@ -62,6 +63,7 @@ namespace Prime
 
             board = new Board(Content.Load<Texture2D>("board"), screenRectangle);
             player = new Player(Content.Load<Texture2D>("player"), screenRectangle);
+            enemy = new Enemy(Content.Load<Texture2D>("enemy"), screenRectangle);
 
             for (int i = 0; i < 10; i++)
             {
@@ -93,6 +95,7 @@ namespace Prime
 
             helper.Update();
             player.Update();
+            enemy.Update();
             board.Update();
 
             base.Update(gameTime);
@@ -112,6 +115,7 @@ namespace Prime
 
             board.Draw(spriteBatch);
             player.Draw(spriteBatch);
+            enemy.Draw(spriteBatch);
 
             spriteBatch.End();
 
