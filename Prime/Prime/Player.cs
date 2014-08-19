@@ -47,6 +47,9 @@ namespace Prime
             {
                 Eat();
             }
+
+            Calc();
+
             if (coords.X > 0 && (Prime.helper.IsNewPress(Keys.Left) || Prime.helper.IsNewPress(Buttons.LeftThumbstickLeft) || Prime.helper.IsNewPress(Buttons.DPadLeft)))
             {
                 coords.X -= 1;
@@ -67,7 +70,49 @@ namespace Prime
 
         public void Eat()
         {
+            int index = (int)coords.Y * 5 + (int)coords.X;
+            int N = Prime.board.Numbers[index];
 
+            if (Prime.primes.Contains(N))
+            {
+                // yay
+                Prime.score += Prime.level;
+                Prime.board.Numbers[index] += Prime.rand.Next(Prime.level, 2 * Prime.level);
+            }
+            else
+            {
+                // gg
+                Prime.score -= Prime.level / 2;
+            }
+        }
+
+        public void Calc()
+        {
+            if (Prime.percent > 100)
+            {
+                Prime.percent = 0;
+                Prime.level += 1;
+                Prime.upLevel = 5;
+            }
+            if (Prime.percent < 0)
+            {
+                Prime.percent = 0;
+            }
+
+            Prime.nextLevel = 3 * Prime.level * (Prime.level + 1);
+            Prime.percent = Prime.score * 100 / Prime.nextLevel;
+
+            if (Prime.displayPercent != Prime.percent)
+            {
+                if (Math.Abs(Prime.displayPercent - Prime.percent) < 2)
+                {
+                    Prime.displayPercent = Prime.percent;
+                }
+                else
+                {
+                    Prime.displayPercent = (Prime.displayPercent + Prime.percent) / 2;
+                }
+            }
         }
     }
 }

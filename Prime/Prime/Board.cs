@@ -12,12 +12,10 @@ namespace Prime
     {
         Vector2 position;
         Vector2 size;
-        int[] Numbers = new int[25];
+        public int[] Numbers = new int[25];
 
         Texture2D texture;
         Rectangle screenBounds;
-
-        Random rand = new Random();
 
         public Board(Texture2D _texture, Rectangle _screenBounds)
         {
@@ -31,7 +29,7 @@ namespace Prime
         {
             for (int i = 0; i < 25; i++)
             {
-                Numbers[i] = rand.Next(1, 21);
+                Numbers[i] = Prime.rand.Next(1, 21);
             }
         }
 

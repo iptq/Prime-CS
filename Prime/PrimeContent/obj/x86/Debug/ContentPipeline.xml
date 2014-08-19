@@ -142,10 +142,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\PrimeContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\PrimeContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\PrimeContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\PrimeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

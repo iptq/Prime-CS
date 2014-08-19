@@ -43,6 +43,8 @@ namespace Prime
 
         public static List<int> primes = new List<int>();
 
+        public static Random rand = new Random();
+
         Texture2D meterTex;
         Texture2D meterFillTex;
 
@@ -53,7 +55,7 @@ namespace Prime
 
             screenRectangle = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             helper = new InputHelper();
-            primes = atkin(10000);
+            primes = atkin(100);
 
             Console.WriteLine("found " + primes.Count + " primes.");
         }
@@ -145,10 +147,10 @@ namespace Prime
             int y = (screenRectangle.Height - h) / 2;
             spriteBatch.Draw(meterTex, new Rectangle(x, y, w, h), Color.White);
 
-            int h1 = percent * (h - 10) / 100;
+            int h1 = displayPercent * (h - 10) / 100;
             w -= 10;
             x += 5;
-            y += 5 + (100 - percent) * (h - 10) / 100;
+            y += 5 + (100 - displayPercent) * (h - 10) / 100;
             spriteBatch.Draw(meterFillTex, new Rectangle(x, y, w, h1), Color.White);
             
             /*
