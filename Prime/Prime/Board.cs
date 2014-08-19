@@ -61,7 +61,7 @@ namespace Prime
 
                 String d = Numbers[i].ToString();
                 int digits = d.Length;
-                Console.WriteLine(d + " is " + digits + " digits long.");
+                // Console.WriteLine(d + " is " + digits + " digits long.");
 
                 Vector2 numSize = new Vector2(size.X / 20, size.X * 64 / 58 / 20);
                 if (digits < 4)

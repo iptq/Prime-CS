@@ -20,6 +20,8 @@ namespace Prime
         KeyboardState keyboardState;
         GamePadState gamePadState;
 
+        bool[] KeyDown = new bool[4] { false, false, false, false }; // up, right, down, left, just like in CSS
+
         public Player(Texture2D _texture, Rectangle _screenBounds)
         {
             texture = _texture;
@@ -46,7 +48,41 @@ namespace Prime
 
         public void Update()
         {
+            UpdateKeys();
 
+            if (KeyDown[1] && coords.X < 4)
+            {
+                coords.X += 1;
+                KeyDown[1] = false;
+            }
+            if (KeyDown[3] && coords.X > 0)
+            {
+                coords.X -= 1;
+                KeyDown[3] = false;
+            }
+        }
+
+        public void UpdateKeys()
+        {
+            keyboardState = Keyboard.GetState();
+            gamePadState = GamePad.GetState(PlayerIndex.One);
+
+            if (!KeyDown[3] && (keyboardState.IsKeyDown(Keys.Left) || gamePadState.IsButtonDown(Buttons.DPadLeft) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft)))
+            {
+                KeyDown[3] = true;
+            }
+            else
+            {
+                KeyDown[3] = false;
+            }
+            if (!KeyDown[1] && (keyboardState.IsKeyDown(Keys.Right) || gamePadState.IsButtonDown(Buttons.DPadRight) || gamePadState.IsButtonDown(Buttons.LeftThumbstickRight)))
+            {
+                KeyDown[1] = true;
+            }
+            else
+            {
+                KeyDown[1] = false;
+            }
         }
     }
 }
