@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-0.xnb</Output>
-      <Time>2014-08-17T23:50:35.6127937-05:00</Time>
+      <Time>2014-08-19T17:38:24.6555541-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-1.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-1.xnb</Output>
-      <Time>2014-08-17T23:50:35.6147947-05:00</Time>
+      <Time>2014-08-19T17:38:33.967484-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-2.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-2.xnb</Output>
-      <Time>2014-08-17T23:50:35.6167989-05:00</Time>
+      <Time>2014-08-19T17:38:46.9236315-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-3.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-3.xnb</Output>
-      <Time>2014-08-17T23:50:35.6218001-05:00</Time>
+      <Time>2014-08-19T17:38:53.4087798-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-4.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-4.xnb</Output>
-      <Time>2014-08-17T23:50:35.6248022-05:00</Time>
+      <Time>2014-08-19T17:38:59.9027568-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-5.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-5.xnb</Output>
-      <Time>2014-08-17T23:50:35.6268056-05:00</Time>
+      <Time>2014-08-19T17:39:06.0486145-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-6.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-6.xnb</Output>
-      <Time>2014-08-17T23:50:35.628805-05:00</Time>
+      <Time>2014-08-19T17:39:12.2693013-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-7.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-7.xnb</Output>
-      <Time>2014-08-17T23:50:35.6308068-05:00</Time>
+      <Time>2014-08-19T17:39:17.7527533-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-8.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-8.xnb</Output>
-      <Time>2014-08-17T23:50:35.6338086-05:00</Time>
+      <Time>2014-08-19T17:39:22.192562-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-9.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\numbers\default-9.xnb</Output>
-      <Time>2014-08-17T23:50:35.6378114-05:00</Time>
+      <Time>2014-08-19T17:39:29.898534-05:00</Time>
     </Item>
     <Item>
       <Source>board.png</Source>

@@ -16,6 +16,9 @@ namespace Prime
         Vector2 coords;
         Vector2 boardPos;
 
+        int frames = 0;
+        int dir = 0;
+
         public Enemy(Texture2D _texture, Rectangle _screenBounds)
         {
             texture = _texture;
@@ -42,7 +45,63 @@ namespace Prime
 
         public void Update()
         {
-
+            frames += 1;
+            if (Prime.level < 7)
+            {
+                if (frames % 50 == 0)
+                {
+                    switch (dir)
+                    {
+                        case 0:
+                            if (coords.Y > 0)
+                            {
+                                coords.Y -= 1;
+                            }
+                            else
+                            {
+                                coords.X += 1;
+                                dir = 1;
+                            }
+                            break;
+                        case 1:
+                            if (coords.X < 4)
+                            {
+                                coords.X += 1;
+                            }
+                            else
+                            {
+                                coords.Y += 1;
+                                dir = 2;
+                            }
+                            break;
+                        case 2:
+                            if (coords.Y < 4)
+                            {
+                                coords.Y += 1;
+                            }
+                            else
+                            {
+                                coords.X -= 1;
+                                dir = 3;
+                            }
+                            break;
+                        case 3:
+                            if (coords.X > 0)
+                            {
+                                coords.X -= 1;
+                            }
+                            else
+                            {
+                                coords.Y -= 1;
+                                dir = 0;
+                            }
+                            break;
+                        default:
+                            // wht the actual fuck
+                            break;
+                    }
+                }
+            }
         }
     }
 }
