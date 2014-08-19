@@ -55,7 +55,7 @@ namespace Prime
 
             screenRectangle = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             helper = new InputHelper();
-            primes = atkin(100);
+            primes = atkin(10000);
 
             Console.WriteLine("found " + primes.Count + " primes.");
         }
@@ -119,12 +119,35 @@ namespace Prime
 
             // TODO: Add your update logic here
 
+            CheckBoard();
+
             helper.Update();
             player.Update();
             enemy.Update();
             board.Update();
 
             base.Update(gameTime);
+        }
+
+        private void CheckBoard()
+        {
+            while (NumberOfPrimesRemainingOnBoard() <= 3)
+            {
+                board.GenerateNumbers();
+            }
+        }
+
+        private int NumberOfPrimesRemainingOnBoard()
+        {
+            int count = 0;
+            for (int i = 0; i < 25; i++)
+            {
+                if (primes.Contains(board.Numbers[i]))
+                {
+                    count += 1;
+                }
+            }
+            return count;
         }
 
         /// <summary>

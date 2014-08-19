@@ -22,14 +22,19 @@ namespace Prime
             texture = _texture;
             screenBounds = _screenBounds;
             SetPosition();
+
+            for (int i = 0; i < 25; i++)
+            {
+                Numbers[i] = 0;
+            }
             GenerateNumbers();
         }
 
-        private void GenerateNumbers()
+        public void GenerateNumbers()
         {
             for (int i = 0; i < 25; i++)
             {
-                Numbers[i] = Prime.rand.Next(1, 21);
+                Numbers[i] += Prime.rand.Next(1, (1 + Prime.level) * 7);
             }
         }
 
