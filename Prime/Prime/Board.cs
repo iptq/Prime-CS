@@ -34,7 +34,7 @@ namespace Prime
         {
             for (int i = 0; i < 25; i++)
             {
-                Numbers[i] += Prime.rand.Next(1, (1 + Prime.level) * 7);
+                Numbers[i] += Prime.rand.Next(1, (Prime.level) * 10);
             }
         }
 
