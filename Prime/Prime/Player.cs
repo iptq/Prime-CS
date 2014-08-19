@@ -67,13 +67,13 @@ namespace Prime
             keyboardState = Keyboard.GetState();
             gamePadState = GamePad.GetState(PlayerIndex.One);
 
-            if (!KeyDown[3] && (keyboardState.IsKeyDown(Keys.Left) || gamePadState.IsButtonDown(Buttons.DPadLeft) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft)))
+            if (!KeyDown[0] && (keyboardState.IsKeyDown(Keys.Up) || gamePadState.IsButtonDown(Buttons.DPadUp) || gamePadState.IsButtonDown(Buttons.LeftThumbstickUp)))
             {
-                KeyDown[3] = true;
+                KeyDown[0] = true;
             }
             else
             {
-                KeyDown[3] = false;
+                KeyDown[0] = false;
             }
             if (!KeyDown[1] && (keyboardState.IsKeyDown(Keys.Right) || gamePadState.IsButtonDown(Buttons.DPadRight) || gamePadState.IsButtonDown(Buttons.LeftThumbstickRight)))
             {
@@ -82,6 +82,22 @@ namespace Prime
             else
             {
                 KeyDown[1] = false;
+            }
+            if (!KeyDown[2] && (keyboardState.IsKeyDown(Keys.Down) || gamePadState.IsButtonDown(Buttons.DPadDown) || gamePadState.IsButtonDown(Buttons.LeftThumbstickDown)))
+            {
+                KeyDown[2] = true;
+            }
+            else
+            {
+                KeyDown[2] = false;
+            }
+            if (!KeyDown[3] && (keyboardState.IsKeyDown(Keys.Left) || gamePadState.IsButtonDown(Buttons.DPadLeft) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft)))
+            {
+                KeyDown[3] = true;
+            }
+            else
+            {
+                KeyDown[3] = false;
             }
         }
     }
