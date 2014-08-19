@@ -43,19 +43,19 @@ namespace Prime
 
         public void Update()
         {
-            if (coords.X > 0 && (Game1.helper.IsNewPress(Keys.Left) || Game1.helper.IsNewPress(Buttons.LeftThumbstickLeft) || Game1.helper.IsNewPress(Buttons.DPadLeft)))
+            if (coords.X > 0 && (Prime.helper.IsNewPress(Keys.Left) || Prime.helper.IsNewPress(Buttons.LeftThumbstickLeft) || Prime.helper.IsNewPress(Buttons.DPadLeft)))
             {
                 coords.X -= 1;
             }
-            if (coords.X < 4 && (Game1.helper.IsNewPress(Keys.Right) || Game1.helper.IsNewPress(Buttons.LeftThumbstickRight) || Game1.helper.IsNewPress(Buttons.DPadRight)))
+            if (coords.X < 4 && (Prime.helper.IsNewPress(Keys.Right) || Prime.helper.IsNewPress(Buttons.LeftThumbstickRight) || Prime.helper.IsNewPress(Buttons.DPadRight)))
             {
                 coords.X += 1;
             }
-            if (coords.Y > 0 && (Game1.helper.IsNewPress(Keys.Up) || Game1.helper.IsNewPress(Buttons.LeftThumbstickUp) || Game1.helper.IsNewPress(Buttons.DPadUp)))
+            if (coords.Y > 0 && (Prime.helper.IsNewPress(Keys.Up) || Prime.helper.IsNewPress(Buttons.LeftThumbstickUp) || Prime.helper.IsNewPress(Buttons.DPadUp)))
             {
                 coords.Y -= 1;
             }
-            if (coords.Y < 4 && (Game1.helper.IsNewPress(Keys.Down) || Game1.helper.IsNewPress(Buttons.LeftThumbstickDown) || Game1.helper.IsNewPress(Buttons.DPadDown)))
+            if (coords.Y < 4 && (Prime.helper.IsNewPress(Keys.Down) || Prime.helper.IsNewPress(Buttons.LeftThumbstickDown) || Prime.helper.IsNewPress(Buttons.DPadDown)))
             {
                 coords.Y += 1;
             }

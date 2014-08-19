@@ -14,7 +14,7 @@ namespace Prime
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class Prime : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
@@ -27,7 +27,7 @@ namespace Prime
 
         public static Texture2D[] numberTextures = new Texture2D[10];
 
-        public Game1()
+        public Prime()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
