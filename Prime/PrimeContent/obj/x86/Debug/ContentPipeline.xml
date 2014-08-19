@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\enemy.xnb</Output>
-      <Time>2014-08-18T21:11:13.9737263-05:00</Time>
+      <Time>2014-08-18T21:13:37.0863941-05:00</Time>
     </Item>
     <Item>
       <Source>player.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2014-08-18T21:11:28.3979415-05:00</Time>
+      <Time>2014-08-18T21:13:26.4553361-05:00</Time>
     </Item>
     <Item>
       <Source>numbers\default-0.png</Source>

@@ -14,19 +14,33 @@ namespace Prime
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Prime : Microsoft.Xna.Framework.Game
+    public static class Prime : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public static GraphicsDeviceManager graphics;
+        public static SpriteBatch spriteBatch;
 
-        Board board;
-        Player player;
-        Enemy enemy;
-        Rectangle screenRectangle;
+        public static Board board;
+        public static Player player;
+        public static Enemy enemy;
+        public static Rectangle screenRectangle;
 
         public static InputHelper helper;
 
         public static Texture2D[] numberTextures = new Texture2D[10];
+
+        public static int score = 0;
+        public static int displayScore = 0;
+        public static int level = 1;
+        public static int nextLevel = 6;
+        public static int percent = 0;
+        public static int displayPercent = 0;
+
+        public static const string rektStatus = "rekt";
+
+        public static int upLevel = 0;
+        public static bool lost = false;
+
+
 
         public Prime()
         {
