@@ -145,7 +145,14 @@ namespace Prime
             int y = (screenRectangle.Height - h) / 2;
             spriteBatch.Draw(meterTex, new Rectangle(x, y, w, h), Color.White);
 
+            int h1 = percent * (h - 10) / 100;
+            w -= 10;
+            x += 5;
+            y += 5 + (100 - percent) * (h - 10) / 100;
+            spriteBatch.Draw(meterFillTex, new Rectangle(x, y, w, h1), Color.White);
 
+            percent += 1;
+            percent %= 100;
 
             player.Draw(spriteBatch);
             enemy.Draw(spriteBatch);
