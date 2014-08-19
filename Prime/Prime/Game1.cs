@@ -23,6 +23,8 @@ namespace Prime
         Player player;
         Rectangle screenRectangle;
 
+        public static InputHelper helper;
+
         public static Texture2D[] numberTextures = new Texture2D[10];
 
         public Game1()
@@ -31,6 +33,7 @@ namespace Prime
             Content.RootDirectory = "Content";
 
             screenRectangle = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+            helper = new InputHelper();
         }
 
         /// <summary>
@@ -88,6 +91,7 @@ namespace Prime
 
             // TODO: Add your update logic here
 
+            helper.Update();
             player.Update();
             board.Update();
 

@@ -17,11 +17,6 @@ namespace Prime
         Vector2 coords;
         Vector2 boardPos;
 
-        KeyboardState keyboardState;
-        GamePadState gamePadState;
-
-        bool[] KeyDown = new bool[4] { false, false, false, false }; // up, right, down, left, just like in CSS
-
         public Player(Texture2D _texture, Rectangle _screenBounds)
         {
             texture = _texture;
@@ -48,66 +43,21 @@ namespace Prime
 
         public void Update()
         {
-            UpdateKeys();
-
-            if (KeyDown[0] && coords.Y > 0)
-            {
-                coords.Y -= 1;
-                KeyDown[0] = false;
-            }
-            if (KeyDown[1] && coords.X < 4)
-            {
-                coords.X += 1;
-                KeyDown[1] = false;
-            }
-            if (KeyDown[2] && coords.Y < 4)
-            {
-                coords.Y += 1;
-                KeyDown[2] = false;
-            }
-            if (KeyDown[3] && coords.X > 0)
+            if (coords.X > 0 && (Game1.helper.IsNewPress(Keys.Left) || Game1.helper.IsNewPress(Buttons.LeftThumbstickLeft) || Game1.helper.IsNewPress(Buttons.DPadLeft)))
             {
                 coords.X -= 1;
-                KeyDown[3] = false;
             }
-        }
-
-        public void UpdateKeys()
-        {
-            keyboardState = Keyboard.GetState();
-            gamePadState = GamePad.GetState(PlayerIndex.One);
-
-            if (!KeyDown[0] && (keyboardState.IsKeyDown(Keys.Up) || gamePadState.IsButtonDown(Buttons.DPadUp) || gamePadState.IsButtonDown(Buttons.LeftThumbstickUp)))
+            if (coords.X < 4 && (Game1.helper.IsNewPress(Keys.Right) || Game1.helper.IsNewPress(Buttons.LeftThumbstickRight) || Game1.helper.IsNewPress(Buttons.DPadRight)))
             {
-                KeyDown[0] = true;
+                coords.X += 1;
             }
-            else
+            if (coords.Y > 0 && (Game1.helper.IsNewPress(Keys.Up) || Game1.helper.IsNewPress(Buttons.LeftThumbstickUp) || Game1.helper.IsNewPress(Buttons.DPadUp)))
             {
-                KeyDown[0] = false;
+                coords.Y -= 1;
             }
-            if (!KeyDown[1] && (keyboardState.IsKeyDown(Keys.Right) || gamePadState.IsButtonDown(Buttons.DPadRight) || gamePadState.IsButtonDown(Buttons.LeftThumbstickRight)))
+            if (coords.Y < 4 && (Game1.helper.IsNewPress(Keys.Down) || Game1.helper.IsNewPress(Buttons.LeftThumbstickDown) || Game1.helper.IsNewPress(Buttons.DPadDown)))
             {
-                KeyDown[1] = true;
-            }
-            else
-            {
-                KeyDown[1] = false;
-            }
-            if (!KeyDown[2] && (keyboardState.IsKeyDown(Keys.Down) || gamePadState.IsButtonDown(Buttons.DPadDown) || gamePadState.IsButtonDown(Buttons.LeftThumbstickDown)))
-            {
-                KeyDown[2] = true;
-            }
-            else
-            {
-                KeyDown[2] = false;
-            }
-            if (!KeyDown[3] && (keyboardState.IsKeyDown(Keys.Left) || gamePadState.IsButtonDown(Buttons.DPadLeft) || gamePadState.IsButtonDown(Buttons.LeftThumbstickLeft)))
-            {
-                KeyDown[3] = true;
-            }
-            else
-            {
-                KeyDown[3] = false;
+                coords.Y += 1;
             }
         }
     }
