@@ -67,7 +67,7 @@ namespace Prime
                 // Console.WriteLine(d + " is " + digits + " digits long.");
 
                 Vector2 numSize = new Vector2(size.X / 20, size.X * 64 / 58 / 20);
-                if (digits < 4)
+                if (digits <= 4)
                 {
                     switch (digits)
                     {
