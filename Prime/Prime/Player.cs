@@ -50,10 +50,20 @@ namespace Prime
         {
             UpdateKeys();
 
+            if (KeyDown[0] && coords.Y > 0)
+            {
+                coords.Y -= 1;
+                KeyDown[0] = false;
+            }
             if (KeyDown[1] && coords.X < 4)
             {
                 coords.X += 1;
                 KeyDown[1] = false;
+            }
+            if (KeyDown[2] && coords.Y < 4)
+            {
+                coords.Y += 1;
+                KeyDown[2] = false;
             }
             if (KeyDown[3] && coords.X > 0)
             {
