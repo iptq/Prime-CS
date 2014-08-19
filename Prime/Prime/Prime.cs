@@ -150,9 +150,12 @@ namespace Prime
             x += 5;
             y += 5 + (100 - percent) * (h - 10) / 100;
             spriteBatch.Draw(meterFillTex, new Rectangle(x, y, w, h1), Color.White);
-
+            
+            /*
+             * DEBUG
             percent += 1;
             percent %= 100;
+             */
 
             player.Draw(spriteBatch);
             enemy.Draw(spriteBatch);
