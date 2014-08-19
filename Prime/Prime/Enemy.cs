@@ -106,6 +106,7 @@ namespace Prime
             {
                 // complicated formula that does nothing
                 int delay = (int)Math.Floor((Math.Floor(-1 * (Math.Log(Prime.level) / (Math.Log(15) - Math.Log(14))) + 65.5)));
+                // Console.WriteLine("frames: " + frames + "\tdelay: " + delay + "\tmod: " + (frames % delay));
                 if (frames % delay == 0)
                 {
                     int px = (int)Prime.player.coords.X;
@@ -188,6 +189,8 @@ namespace Prime
                             }
                         }
                     }
+                    coords.X = ex;
+                    coords.Y = ey;
                 }
             }
         }
