@@ -45,6 +45,10 @@ namespace Prime
 
         public void Update()
         {
+            if (coords.X == Prime.player.coords.X && coords.Y == Prime.player.coords.Y)
+            {
+                Prime.lost = true;
+            }
             frames += 1;
             if (Prime.level < 7)
             {

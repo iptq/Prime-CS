@@ -45,6 +45,8 @@ namespace Prime
 
         public static Random rand = new Random();
 
+        Texture2D lostTex;
+        Texture2D rektTex;
         Texture2D meterTex;
         Texture2D meterFillTex;
 
@@ -89,6 +91,9 @@ namespace Prime
             player = new Player(Content.Load<Texture2D>("player"), screenRectangle);
             enemy = new Enemy(Content.Load<Texture2D>("enemy"), screenRectangle);
 
+            lostTex = Content.Load<Texture2D>("lose");
+            rektTex = Content.Load<Texture2D>("semitransparent");
+
             meterTex = Content.Load<Texture2D>("meter");
             meterFillTex = Content.Load<Texture2D>("meter-fill");
 
@@ -120,12 +125,18 @@ namespace Prime
 
             // TODO: Add your update logic here
 
-            CheckBoard();
-
             helper.Update();
-            player.Update();
-            enemy.Update();
-            board.Update();
+            if (!lost)
+            {
+                CheckBoard();
+                player.Update();
+                enemy.Update();
+                board.Update();
+            }
+            else
+            {
+                
+            }
 
             base.Update(gameTime);
         }
@@ -185,6 +196,12 @@ namespace Prime
 
             player.Draw(spriteBatch);
             enemy.Draw(spriteBatch);
+
+            if (lost)
+            {
+                spriteBatch.Draw(rektTex, new Rectangle(0, 0, screenRectangle.Width, screenRectangle.Height), Color.White);
+                spriteBatch.Draw(lostTex, new Rectangle(screenRectangle.Width / 4, screenRectangle.Width / 4, screenRectangle.Width / 2, screenRectangle.Width / 8), Color.White);
+            }
 
             spriteBatch.End();
 
