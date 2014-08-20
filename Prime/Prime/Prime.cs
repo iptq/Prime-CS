@@ -173,7 +173,7 @@ namespace Prime
                 board.GenerateNumbers();
             }
         }
-
+        
         private int NumberOfPrimesRemainingOnBoard()
         {
             int count = 0;

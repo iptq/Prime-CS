@@ -21,3 +21,7 @@ C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\meter.xnb
 C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\lose.xnb
 C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\semitransparent.xnb
+C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Prime.exe.manifest
+C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Prime.application
+C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.exe.manifest
+C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\obj\x86\Debug\Prime.application
