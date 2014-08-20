@@ -19,3 +19,5 @@ c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86
 c:\users\michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\board.xnb
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\meter-fill.xnb
 C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\meter.xnb
+C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\lose.xnb
+C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\semitransparent.xnb

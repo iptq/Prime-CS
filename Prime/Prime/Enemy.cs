@@ -13,7 +13,7 @@ namespace Prime
         Rectangle screenBounds;
 
         Vector2 size;
-        Vector2 coords;
+        public Vector2 coords;
         Vector2 boardPos;
 
         int frames = 0;

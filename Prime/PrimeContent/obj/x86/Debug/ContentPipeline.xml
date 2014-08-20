@@ -136,6 +136,24 @@
       <Output>C:\Users\Michael\Documents\Visual Studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\meter.xnb</Output>
       <Time>2014-08-18T23:24:10.1192957-05:00</Time>
     </Item>
+    <Item>
+      <Source>lose.png</Source>
+      <Name>lose</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\lose.xnb</Output>
+      <Time>2014-08-19T22:50:06.4875148-05:00</Time>
+    </Item>
+    <Item>
+      <Source>semitransparent.png</Source>
+      <Name>semitransparent</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Michael\documents\visual studio 2010\Projects\Prime\Prime\Prime\bin\x86\Debug\Content\semitransparent.xnb</Output>
+      <Time>2014-08-19T22:43:55.2114048-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

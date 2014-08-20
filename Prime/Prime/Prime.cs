@@ -43,7 +43,7 @@ namespace Prime
 
         public static List<int> primes = new List<int>();
 
-        public static Random rand = new Random();
+        public static Random rand = new Random((Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds);
 
         Texture2D lostTex;
         Texture2D rektTex;
@@ -135,10 +135,35 @@ namespace Prime
             }
             else
             {
-                
+                if (helper.CurrentMouseState.LeftButton == ButtonState.Pressed)
+                {
+                    NewGame();
+                }
+                if (helper.CurrentKeyboardState.GetPressedKeys().Length > 0)
+                {
+                    NewGame();
+                }
             }
 
             base.Update(gameTime);
+        }
+
+        public void NewGame()
+        {
+            lost = false;
+
+            score = 0;
+            displayScore = 0;
+            level = 1;
+            nextLevel = 6;
+            percent = 0;
+            displayPercent = 0;
+
+            upLevel = 0;
+            rand = new Random((Int32)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalSeconds);
+
+            player.coords = new Vector2(2, 2);
+            enemy.coords = new Vector2(1, 0);
         }
 
         private void CheckBoard()
@@ -187,7 +212,7 @@ namespace Prime
             x += 5;
             y += 5 + (100 - displayPercent) * (h - 10) / 100;
             spriteBatch.Draw(meterFillTex, new Rectangle(x, y, w, h1), Color.White);
-            
+
             /*
              * DEBUG
             percent += 1;
