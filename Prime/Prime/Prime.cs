@@ -51,6 +51,7 @@ namespace Prime
         public Prime()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferMultiSampling = true;
             Content.RootDirectory = "Content";
 
             screenRectangle = new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
