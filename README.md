@@ -3,7 +3,7 @@ Prime-CS
 
 C# port of prime (http://failedxyz.github.io/prime)
 
-Grab the latest version here: https://github.com/failedxyz/Prime-CS/raw/master/Versions/Latest/Prime.exe
+Grab the latest version here: https://github.com/failedxyz/Prime-CS/raw/master/Versions/Latest/Prime.zip?raw=true
 
 Rules
 =======
