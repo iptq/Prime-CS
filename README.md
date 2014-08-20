@@ -3,10 +3,10 @@ Prime-CS
 
 C# port of prime (http://failedxyz.github.io/prime)
 
-Grab the latest version here: https://github.com/failedxyz/Prime-CS/blob/master/Prime/Prime/bin/x86/Debug/Prime.exe?raw=true
+Grab the latest version here: https://github.com/failedxyz/Prime-CS/raw/master/Versions/Latest/Prime.exe
 
 Rules
-========
+=======
 
 Use arrow keys to play. If you don't have arrow keys, then you can't play.
 
